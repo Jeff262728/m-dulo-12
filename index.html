@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Agência Pixel - criação de sites, branding e marketing digital.">
+  <title>Agência Pixel | Soluções Digitais</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header class="cabecalho">
+    <div class="layout__container cabecalho__conteudo">
+     <a class="logo" href="#home" aria-label="Agência Pixel - início">
+  Pixel<span class="logo__dinamico"></span><span class="logo__cursor">|</span>
+</a>
+
+      <button class="menu__toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-principal">
+        <span class="menu__linha"></span><span class="menu__linha"></span><span class="menu__linha"></span>
+      </button>
+
+      <nav id="menu-principal" class="navegacao" aria-label="Navegação principal">
+        <a class="navegacao__link" href="#home">Home</a>
+        <a class="navegacao__link" href="#sobre">Sobre Nós</a>
+        <a class="navegacao__link" href="#servicos">Serviços</a>
+        <a class="navegacao__link" href="#depoimentos">Depoimentos</a>
+        <a class="navegacao__link" href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <picture>
+        <source media="(max-width: 600px)" srcset="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=900&q=75">
+        <source media="(max-width: 1200px)" srcset="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1400&q=75">
+        <img
+          src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=2000&q=80"
+          srcset="
+            https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=900&q=75 900w,
+            https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1400&q=75 1400w,
+            https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=2000&q=80 2000w"
+          sizes="100vw"
+          alt="Equipe trabalhando em uma agência criativa"
+          fetchpriority="high">
+      </picture>
+      <div class="hero__overlay"></div>
+      <div class="layout__container hero__conteudo">
+        <p class="texto-destaque">Estratégia • Design • Tecnologia</p>
+        <h1>Ideias que viram <span>resultados.</span></h1>
+        <p>Somos uma agência digital que transforma marcas em experiências memoráveis, combinando criatividade, estratégia e tecnologia.</p>
+        <a class="botao" href="#contato">Fale com a gente</a>
+      </div>
+    </section>
+
+    <section id="sobre" class="secao">
+      <div class="layout__container sobre__grid">
+        <div>
+          <p class="texto-destaque">Sobre nós</p>
+          <h2>Construímos marcas preparadas para o futuro.</h2>
+        </div>
+        <div>
+          <p>A Agência Pixel nasceu para aproximar empresas de seus clientes por meio do digital. Criamos soluções claras, bonitas e funcionais para negócios que querem crescer.</p>
+          <div class="valores">
+            <article class="valores__item"><strong class="valores__numero">01</strong><h3 class="valores__titulo">Criatividade</h3><p class="valores__descricao">Ideias originais com propósito.</p></article>
+            <article class="valores__item"><strong class="valores__numero">02</strong><h3 class="valores__titulo">Transparência</h3><p class="valores__descricao">Parcerias baseadas em confiança.</p></article>
+            <article class="valores__item"><strong class="valores__numero">03</strong><h3 class="valores__titulo">Resultado</h3><p class="valores__descricao">Estratégia orientada a objetivos.</p></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="servicos" class="secao secao--destaque">
+      <div class="layout__container">
+        <div class="secao__cabecalho">
+          <div>
+            <p class="texto-destaque">O que fazemos</p>
+            <h2>Nossos serviços</h2>
+          </div>
+          <p>Do planejamento à execução, cuidamos de cada etapa da sua presença digital.</p>
+        </div>
+        <div class="servicos__grid">
+          <article class="servico-card"><span>01</span><h3>Web Design</h3><p>Sites responsivos, rápidos e focados na experiência do usuário.</p></article>
+          <article class="servico-card"><span>02</span><h3>Branding</h3><p>Identidades visuais consistentes que tornam sua marca reconhecível.</p></article>
+          <article class="servico-card"><span>03</span><h3>Marketing Digital</h3><p>Campanhas e estratégias para aumentar alcance e conversão.</p></article>
+          <article class="servico-card"><span>04</span><h3>SEO</h3><p>Otimização para melhorar sua visibilidade nos mecanismos de busca.</p></article>
+          <article class="servico-card"><span>05</span><h3>Social Media</h3><p>Conteúdo estratégico para criar relacionamento com seu público.</p></article>
+          <article class="servico-card"><span>06</span><h3>Consultoria</h3><p>Diagnóstico e direcionamento para acelerar sua transformação digital.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="depoimentos" class="secao">
+      <div class="layout__container">
+        <div class="secao__cabecalho">
+          <div><p class="texto-destaque">Quem confia</p><h2>Depoimentos</h2></div>
+        </div>
+        <div class="depoimentos__grid">
+          <blockquote class="depoimento-card"><p>“A Pixel entendeu nossa essência e transformou isso em uma identidade visual que realmente representa nossa empresa.”</p><cite>Mariana Costa — CEO, NovaTech</cite></blockquote>
+          <blockquote class="depoimento-card"><p>“O novo site trouxe uma experiência muito melhor para nossos clientes e aumentou a geração de leads.”</p><cite>Rafael Lima — Diretor, Horizonte</cite></blockquote>
+          <blockquote class="depoimento-card"><p>“Profissionalismo, criatividade e comunicação clara do início ao fim. Recomendo muito.”</p><cite>Camila Souza — Fundadora, Casa Viva</cite></blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="secao contato">
+      <div class="layout__container contato__grid">
+        <div>
+          <p class="texto-destaque">Vamos conversar</p>
+          <h2>Tem um projeto em mente?</h2>
+          <p>Conte um pouco sobre seu desafio e nossa equipe entrará em contato.</p>
+          <address>
+            <p><strong>Endereço:</strong> Av. Criativa, 1000 — São Paulo, SP</p>
+            <p><strong>Telefone:</strong> <a href="tel:+5511999999999">(11) 99999-9999</a></p>
+            <p><strong>E-mail:</strong> <a href="mailto:contato@agenciapixel.com.br">contato@agenciapixel.com.br</a></p>
+          </address>
+        </div>
+
+        <form class="formulario" action="#" method="post">
+          <div class="formulario__campo">
+            <label for="nome">Nome</label>
+            <input id="nome" name="nome" type="text" autocomplete="name" required placeholder="Seu nome">
+          </div>
+          <div class="formulario__campo">
+            <label for="email">E-mail</label>
+            <input id="email" name="email" type="email" autocomplete="email" required placeholder="voce@email.com">
+          </div>
+          <div class="formulario__campo">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="6" required placeholder="Como podemos ajudar?"></textarea>
+          </div>
+          <button class="botao botao--formulario" type="submit">Enviar mensagem</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="layout__container rodape__conteudo">
+      <p>© 2026 Agência Pixel. Todos os direitos reservados.</p>
+      <a href="#home">Voltar ao topo ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
